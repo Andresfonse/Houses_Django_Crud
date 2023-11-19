@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block titulo %} Agregar nueva propiedad {% endblock %}
+
+{% block contenido %}
+<div class="card">
+  <div class="card-header">
+    Agendar
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Datos Personales</h4>
+    <h4>{{ propiedad.titulo }}</h4>
+      {% include 'builds/form.html' %}
+  </div>
+</div>
+
+    <img src="https://i.gifer.com/origin/ec/ec7ff2b422fef7ac7a68da009e30abd5_w200.gif" height="200" width="100">
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block titulo %} Propiedades {% endblock %}
+
+{% block contenido %}
+
+<div class="card">
+    <div class="card-header">
+        <h4>Agendados</h4>
+    </div>
+    <div class="card-body">
+
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Telefono</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for dato in datos %}
+            <tr>
+                <td>{{ dato.id }}</td>
+                <td>{{ dato.nombres }}</td>
+                <td>
+                    {{ dato.apellidos }}
+
+                </td>
+                <td>{{ dato.telefono }}</td>
+                <td>
+                    <a name="" id="" class="btn btn-success" href="#"
+                       role="button">Confirmar Cita</a> |
+                    <a name="" id="" class="btn btn-danger"
+                       href="#"
+                       role="button">Cancelarla</a>
+
+                </td>
+
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+
+
+</div>
+ <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="https://i.gifer.com/origin/ec/ec7ff2b422fef7ac7a68da009e30abd5_w200.gif" height="200" width="100">
+
+
+{% endblock %}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+<div style="background-image: url('https://img.freepik.com/foto-gratis/diseno-diseno-fondo-naranja-liso-abstracto-estudio-sala-plantilla-web-informe-comercial-color-degradado-circulo-suave_1258-53296.jpg');background-size: cover;
+    background-position: center;">
+  <div class="p-5 bg-light">
+  <div class="container">
+    <section class="vh-100" style="background-color: #FFFFFF;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Login
+                          <img src="https://static.wixstatic.com/media/9c808c_f900904c3241435e8866bbd5072c00d4~mv2.gif" height="200" width="100">
+
+            </h3>
+
+              <form method="post">
+    {% csrf_token %}
+    <div class="input-group">
+    <label for="usuario">User</label>
+    <input type="text"
+           class="form-control" name="username" id="" placeholder="Usuario">
+
+    <label for="pass">Password</label>
+    <input type="password"
+           class="form-control" name="password" id="" placeholder="Password">
+
+
+    <button type="submit">Log in</button>
+</div>
+
+
+</form>
+
+
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-start mb-4">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+              <label class="form-check-label" for="form1Example3"> Remember password </label>
+            </div>
+
+
+            <hr class="my-4">
+
+            <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
+              type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
+
+              <br>
+              <br>
+            <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
+              type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
+</body>
+</html>

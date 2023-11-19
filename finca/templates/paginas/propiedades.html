@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block titulo %} Propiedades {% endblock %}
+
+{% block contenido %}
+<div class="row">
+    {% for propiedad in propiedades %}
+
+    <div class="col-4">
+        <div class="card text-center" style="width: 20rem; height: 27rem">
+            <img class="card-img-top" src="{{ propiedad.imagen }}" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">{{ propiedad.titulo }}</h4>
+                <p class="card-text">{{ propiedad.description }}</p>
+                <p class="card-text">${{ propiedad.precio }}</p>
+                <a href="{% url 'agenda' propiedad.id %}" class="btn btn-primary">Citar Ahora <i
+                        class="fa-solid fa-heart fa-beat"></i></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    {% endfor %}
+</div>
+
+    <img src="https://i.gifer.com/origin/ec/ec7ff2b422fef7ac7a68da009e30abd5_w200.gif" height="200" width="100">
+
+{% endblock %}
